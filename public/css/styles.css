@@ -1,0 +1,131 @@
+:root {
+    --primary: #201444
+}
+
+body {
+    font-family: 'Roboto';
+    font-style: normal;
+}
+
+.header {
+    color: white;
+    padding-top: 13px;
+}
+
+.bg-pink {
+    background-color: var(--primary);
+}
+
+.header .open {
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: right;
+}
+
+.header a {
+    color: white;
+}
+
+.swiper {
+    width: 100%;
+    height: 324px;
+  }
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.non-mobile-nav li a {
+    border-left: 3px solid white;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    padding: 1px 10px;
+    text-decoration: none;
+}
+
+.non-mobile-nav li:first-child a {
+    border-left:none;
+}
+
+.non-mobile-nav li:last-child a {
+    padding-right: 0;
+}
+
+.non-mobile-nav ul {
+    padding: 10px 0;
+    list-style: none; 
+    margin: 0;
+}
+
+@media only screen and (max-width: 1024px) {
+    .non-mobile-nav li a {
+      border-left: none;
+    }
+  }
+
+  .swiper {
+    width: 100%;
+    height: 324px;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+  
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+.bg-pink {
+    background-color: var(--primary);
+}
+
+.rounded-full {
+    border-radius: 9999px;
+}
