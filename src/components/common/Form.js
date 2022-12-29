@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import Swal from "sweetalert2";
 
 function Form(props) {
     const { background, maxWidth, minWidth } = props;
@@ -31,7 +32,19 @@ function Form(props) {
 
         axios
             .post('http://solanoglass.com/sendEmail.php', data)
-            .then(res => console.log(res))
+            .then(res => {
+                if(res.data === 'success') {
+                    Swal.fire({
+                        icon: 'success',
+                        title: 'Your email was sent successfully'
+                    })
+                } else {
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Something went wrong. Try again!'
+                    })
+                }
+            })
             .catch(err => console.log(err));
     }
 
